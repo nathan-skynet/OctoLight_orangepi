@@ -5,7 +5,7 @@ import octoprint.plugin
 from octoprint.events import Events
 import flask
 
-import RPi.GPIO as GPIO
+import OPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
