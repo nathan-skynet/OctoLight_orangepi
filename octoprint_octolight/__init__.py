@@ -5,9 +5,10 @@ import octoprint.plugin
 from octoprint.events import Events
 import flask
 
-import OPi.GPIO as GPIO
+import orangepi.zero2
+from OPi import GPIO
+GPIO.setmode(orangepi.zero2.BOARD)
 
-GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
 class OctoLightPlugin(
